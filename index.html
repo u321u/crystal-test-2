@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vervet — One Call for it ALL</title>
+  <meta name="description" content="Hire trusted help fast or join the team. Vervet connects families, businesses, and hustlers for short-term work.">
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; background: #f8f5f0; color: #333;}
+    .container {max-width: 800px; margin: auto; padding: 20px;}
+    .header {background: white; border-bottom: 1px solid #ddd;}
+    .header-row {display: flex; justify-content: space-between; align-items: center;}
+    .brand {color: #0F766E; font-size: 1.8rem; font-weight: bold;}
+    .btn {background: #0F766E; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none;}
+    .btn-outline {border: 1px solid #0F766E; color: #0F766E; padding: 10px 16px; border-radius: 6px; text-decoration: none;}
+    .hero {text-align: center; padding: 40px 0;}
+    form {display: flex; flex-direction: column; gap: 10px; margin-top: 10px;}
+    input, textarea {padding: 10px; border: 1px solid #ccc; border-radius: 4px;}
+    button.btn {border: none; cursor: pointer;}
+    .footer {text-align: center; padding: 30px 0; font-size: 14px; color: #777;}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-row">
+      <h1 class="brand">Vervet</h1>
+      <nav>
+        <a href="#hire">Hire</a>
+        <a href="#join">Join</a>
+        <a href="tel:+12512890478" class="btn">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hire Trusted Help — Fast</h2>
+      <p>We connect families, businesses, and travelers with reliable helpers: cleaners, caregivers, movers, handymen, pet sitters, and more.</p>
+      <div class="buttons">
+        <a href="#hire" class="btn">Hire Help</a>
+        <a href="#join" class="btn-outline">Join the Team</a>
+      </div>
+    </section>
+
+    <section id="hire">
+      <h3>Hire a Helper</h3>
+      <form action="https://formspree.io/f/YOUR_HIRE_ID" method="POST">
+        <input name="name" placeholder="Your Name" required>
+        <input name="phone" placeholder="Your Phone" required>
+        <textarea name="details" placeholder="What do you need help with?" required></textarea>
+        <button type="submit" class="btn">Submit Request</button>
+      </form>
+    </section>
+
+    <section id="join">
+      <h3>Apply to Join Our Team</h3>
+      <form action="https://formspree.io/f/YOUR_JOIN_ID" method="POST">
+        <input name="name" placeholder="Your Name" required>
+        <input name="phone" placeholder="Your Phone" required>
+        <textarea name="skills" placeholder="Skills / Experience"></textarea>
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Vervet LLC · One Call for it ALL</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
